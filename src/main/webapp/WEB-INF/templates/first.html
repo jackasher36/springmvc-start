@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iPhone 主屏幕</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f7;
+      margin: 0;
+      padding: 20px;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .weather-widget {
+      text-align: left;
+    }
+    .app-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .app {
+      text-align: center;
+    }
+    .app-icon {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 8px;
+    }
+    .dock {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 10px 0;
+      display: flex;
+      justify-content: space-around;
+    }
+  </style>
+</head>
+<body>
+<div class="header">
+  <div>12:19</div>
+  <div>Wi-Fi 5G 100%</div>
+</div>
+<div class="weather-widget">
+  <p>新都</p>
+  <p>29° Mostly Sunny</p>
+  <p>H31° L19°</p>
+</div>
+<div class="app-grid">
+  <!-- 应用图标 -->
+  <div class="app">
+    <img src="facetime-icon.png" alt="FaceTime" class="app-icon">
+    <p>FaceTime</p>
+  </div>
+  <!-- 更多应用图标 -->
+</div>
+<div class="dock">
+  <!-- 底部应用图标 -->
+  <div class="app">
+    <img src="phone-icon.png" alt="Phone" class="app-icon">
+    <p>电话</p>
+  </div>
+  <!-- 更多底部应用图标 -->
+</div>
+</body>
+</html>
